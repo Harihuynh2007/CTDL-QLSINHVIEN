@@ -40,13 +40,23 @@ struct DangKy
 
 // Cấu trúc lớp tín chỉ (danh sách tuyến tính con trỏ)
 struct LopTinChi {
-    int maLopTC;     // MALOPTC (tự động tăng)
-    char maMH[11];   // MAMH
-    char nienKhoa[10]; // Niên khóa
-    int hocKy;       // Học kỳ
-    int nhom;        // Nhóm
-    int soSVMin;     // Số SV tối thiểu
-    int soSVMax;     // Số SV tối đa
-    bool huyLop;     // Trạng thái hủy lớp
-    DangKy* dsSVDK;  // Danh sách SV đăng ký
+    int maLopTC;     
+    char maMH[11];   
+    char nienKhoa[10]; 
+    int hocKy;       
+    int nhom;        
+    int soSVMin;     
+    int soSVMax;     
+    bool huyLop;     
+    DangKy* dsSVDK;  
 };
+
+// Cấu trúc lớp sinh viên (danh sách tuyến tính cấp phát động)
+struct Lop {
+    char maLop[16];  // MALOP (C15)
+    char tenLop[51]; // TENLOP
+    SinhVien* dsSV;  // Danh sách sinh viên
+};
+
+
+// =============== KHAI BÁO DỮ LIỆU TOÀN CỤC ===============
