@@ -60,3 +60,15 @@ struct Lop {
 
 
 // =============== KHAI BÁO DỮ LIỆU TOÀN CỤC ===============
+
+MonHoc* rootMonHoc = NULL;         // Cây nhị phân môn học
+Lop* dsLop = NULL;                 // DS lớp cấp phát động
+int soLuongLop = 0;                // Số lượng lớp hiện tại
+int kichThuocDSLop = 0;            // Kích thước mảng cấp phát
+LopTinChi* dsLopTC = NULL;         // DS lớp tín chỉ
+int soLuongLopTC = 0;              // Số lượng lớp tín chỉ hiện tại
+const int MAX_LOP_TC = 10000;      // Số lượng lớp tín chỉ tối đa
+
+
+
+
